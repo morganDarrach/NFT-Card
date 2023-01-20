@@ -63,6 +63,26 @@ footer {
     border-radius: 6px;;
 }
 
+.img-contain {
+    position: relative;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 302px;
+    height: 302px;
+    margin: auto;
+    z-index: 1;
+}
+
+.view:hover {
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 .information {
     width: 302px;
     margin: 0 24px; 
@@ -84,6 +104,11 @@ footer {
     font-size: 1.37em;
     font-weight: 600;
     padding-top: 1px;
+}
+
+.nft-title:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .nft-description {
@@ -138,6 +163,11 @@ hr {
 
 .author {
     color: white;
+}
+
+.author:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 
