@@ -60,17 +60,16 @@ footer {
     margin: auto;
 }
 
+.img-contain {
+    position: relative;
+}
 
 .nft-image {
     display: block;
-    width: 302px;
-    height: 302px;
+    width: 86%;
+    height: auto;
     margin: 24px auto;
     border-radius: 6px;
-}
-
-.img-contain {
-    position: relative;
 }
 
 .view {
@@ -78,7 +77,7 @@ footer {
     top: 0;
     left: 24px;
     width: 302px;
-    height: 302px;
+    height: 301px;
     margin: auto;
     opacity: 0;
 }
@@ -103,18 +102,8 @@ footer {
     margin: 0 24px; 
 }
 
-.stats {
-    display: flex;
-    justify-content: space-between;
-}
-
-.creator-img {
-    border: 1px solid white;
-    border-radius: 50%;
-    vertical-align: middle;
-}
-
 .nft-title {
+    display: inline;
     color: white;
     font-size: 1.37em;
     font-weight: 600;
@@ -134,7 +123,11 @@ footer {
     line-height: 1.4;
 }
 
-
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
 
 .price {
     color: var(--cyan);
@@ -146,14 +139,12 @@ footer {
     margin-right: 2px;
 }
 
+
+
 svg {
     position: relative;
     vertical-align: middle;
     bottom: 2px;
-}
-
-.stats {
-    margin-top: 23px;
 }
 
 hr {
@@ -169,6 +160,11 @@ hr {
     color: var(--softblue);
 }
 
+.creator-img {
+    border: 1px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+}
 
 .creator {
     position: relative;
@@ -185,5 +181,63 @@ hr {
     cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+    .card {
+        background-color: var(--card-BG);
+        max-width: 327px;
+        height: 542px;
+        border-radius: 15px;
+        margin: auto;
+    }
+
+    .view {
+        width: 85%;
+        height: 279px;
+    }
+
+    .information {
+        width: 278px;
+        margin: 0 24px; 
+    }
+
+    .nft-description {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    hr {
+        margin-top: 12px;
+        border-top: 1px solid var(--line);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .stats {
+        margin-top: 15px;
+    }
+
+    .nft-title {
+        color: white;
+        font-size: 1.37em;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    .time-remaining {
+        font-size: 15px;
+    }
+
+    .creator {
+        font-size: 15px;
+    }
+}
 
 
