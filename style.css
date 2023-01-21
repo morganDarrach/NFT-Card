@@ -37,7 +37,7 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     flex-direction: column;
     height: 100vh;
     background-color: var(--main-BG);
@@ -184,7 +184,7 @@ hr {
 @media screen and (max-width: 375px) {
 
     body {
-        overflow: auto;
+        overflow: scroll;
     }
 
     .card {
@@ -192,7 +192,7 @@ hr {
         max-width: 327px;
         height: 542px;
         border-radius: 15px;
-        margin: auto;
+        margin: 24px auto 0;
     }
 
     .view {
