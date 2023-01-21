@@ -183,21 +183,17 @@ hr {
 
 @media screen and (max-width: 375px) {
 
-    body {
-        overflow: scroll;
-    }
-
     .card {
         background-color: var(--card-BG);
         max-width: 327px;
         height: 542px;
         border-radius: 15px;
-        margin: 24px auto 0;
+        margin: auto;
     }
 
     .view {
-        width: 85%;
-        height: 279px;
+        width: 86%;
+        height: 281px;
     }
 
     .information {
@@ -242,6 +238,12 @@ hr {
 
     .creator {
         font-size: 15px;
+    }
+
+    footer {
+        position: static;
+        text-align: center;
+        translate: 0%;
     }
 }
 
