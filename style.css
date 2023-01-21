@@ -120,13 +120,13 @@ footer {
     font-weight: 300;
     font-size: 18px;
     margin-top: 17px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 23px;
+    margin-top: 22px;
 }
 
 .price {
